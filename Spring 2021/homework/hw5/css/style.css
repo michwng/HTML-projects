@@ -1,0 +1,114 @@
+/*
+    Author:				Michael Ng
+	Date:				4/5/2021
+	Assignment:			Homework 5 - 3 Page Project
+	Purpose:			Practice for website creation
+*/
+/* Note - Part of this has been borrowed from Lab 7's css file and edited. */
+
+/* The CSS formatting for the majority of the page. Margin adds a 10 pixel space above and below the content and a 100 pixel margin that "pinches' the website by pushing the content towards the vertical center. Sets the font family to open sans (or other sans serif font if the client computer doesn't have the open sans font) and sets the background color to a dark green color (darkest themed color of the website).*/
+body{
+    margin: 10px 100px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #003315;
+}
+
+/* CSS formatting for the header. Sets the background color to a dark green, adds a 30 pixel space between the 3px solid white border and the content, and adds a 10 pixel margin below it.*/
+header{
+    background-color: #00491E;
+    padding: 30px;
+    color: white;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+/* CSS formatting for the Navigation Bar. Adds 5 pixel spacing from the 3px solid white border and the content inside. Also sets the background color to a dark green and text color to white. Adds a 10 pixel margin below it.*/
+nav {
+	padding: 5px;
+	background-color: #005D25;
+    color: white;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+/* Changes the color of the link when the link is used. */
+nav a:link, nav a:visited {
+	color: white;
+}
+
+/* Changes the color of the website link when the mouse cursor hovers over them. */
+nav a:hover, nav a:active {
+	box-sizing: border-box;
+	color: white;
+}
+
+/* Allows an image to position itself to the left side of the text */
+img.floatLeft {
+	display: block;
+	float: left;
+	margin: 0 15px;
+	height: 150px;
+}
+
+/* Allows an image to position itself to the right side of the text */
+img.floatRight {
+    top: 10px;
+	display: block;
+	float: right;
+    position: relative;
+	margin: 0 15px;
+	height: 150px;
+}
+
+/* Changes the color for the text inside h1, h2, and h3 elements to white. */
+h1, h2, h3{
+    color: white;
+}
+
+/* A class for h2 elements. Spaces h2 elements so they appear well-spaced on the page by giving them a 10 pixel margin on all sides. */
+h2.article {
+    margin: 10px;
+}
+
+/* CSS formatting for p elements. Changes background color to a green color, sets text to a white color, adds a 3 pixel solid white border, 10 pixel padding on all sides, and a 5 pixel margin above it. */
+p{
+    background-color: #008034;
+    color: white;
+    border: 3px solid white;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/* CSS formatting for unordered lists. Changes text in the list to white. */
+ul{
+    color: white;
+}
+
+/* CSS formatting for divs. Sets the background color to a dark-ish green, adds a 3 pixel wide border, some horizontal padding, and margins.*/
+div{
+    background-color: #006E2D;
+    border: 3px solid white;
+    padding: 0px 10px;
+    margin: 25px 50px;
+}
+
+/* CSS formatting for a table. Changes text color to white, has a darkgreen background color, and has a 1 pixel solid white border. */
+table{
+    color: white;
+    background-color: darkgreen;
+    border: 1px solid white;
+}
+
+/* CSS for the Table's headings and data. Centers and pads the cells (3 pixels vertically, 10 pixels horizontally.*/
+th, td{
+    padding: 3px 10px;
+    text-align: center;
+    border: 1px solid white; /* I don't like this, but it fixes an error. */
+}
+
+/* CSS for a href tags. Changes the color to blanched almond (what a name for a color!). */
+a{
+    color: blanchedalmond;
+}
+
+/* Hopefully the person that's maintaining my code isn't coming to my house... Uh-oh... */

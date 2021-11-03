@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Michael Ng"> 
+	<meta name="description" content="CSCI 1210 Homework 5">
+	<meta name="keywords" content="CSCI, 1210, Homework 5, hw5">
+	<title>Inline Elements</title>
+    <link rel="icon" href="images/aboutme.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+	<!-- 
+		Author:				Michael Ng
+		Date:				4/5/2021
+		Assignment:			Homework 5 - 3 Page Project
+		Purpose:			Practice for website creation
+	-->
+</head>
+<body>
+    <header>
+        <img src="images/htmlsymbol.jpg" alt="HTML Symbol"  class="floatRight">
+        <h1>An Overview of HTML</h1>
+        <hr>
+        <h2>In-line Elements</h2>
+    </header>
+	
+    <nav>
+        |&nbsp;<a href="index.html">Home</a> |&nbsp;
+        <a href="inline.html">In-Line Elements</a> |&nbsp;
+        <a href="block.html">Block Elements</a> |&nbsp;
+    </nav>
+    
+    <div>
+    <h2 class='article'>In-Line Elements</h2>
+        <p>
+            In-Line elements are tags in HTML that typically take up 1 line. For example, <strong>this bold, strong text</strong> houses the &lt;strong&gt; and &lt;/strong&gt; tags. <i>This italicized text utilizes the &lt;i&gt; and &lt;/i&gt; tags.</i> 
+        </p>
+        <h3>Here are a few In-Line tags used in HTML.</h3>
+        <table>
+            <tr>
+                <th>Term</th>
+                <th>Opening Tag</th>
+                <th>Closing Tag</th>
+                <th>What It Does</th>
+            </tr>
+            <tr>
+                <td>strong</td>
+                <td>&lt;strong&gt;</td>
+                <td>&lt;/strong&gt;</td>
+                <td><strong>Bolds Text</strong></td>
+            </tr>
+            <tr>
+                <td>i</td>
+                <td>&lt;i&gt;</td>
+                <td>&lt;/i&gt;</td>
+                <td><i>Italicizes Text</i></td>
+            </tr>
+            <tr>
+                <td>h1</td>
+                <td>&lt;h1&gt;</td>
+                <td>&lt;/h1&gt;</td>
+                <td>Acts as a Primary Header.</td>
+            </tr>
+            <tr>
+                <td>h2</td>
+                <td>&lt;h2&gt;</td>
+                <td>&lt;/h2&gt;</td>
+                <td>Acts as a Secondary Header.</td>
+            </tr>
+            <tr>
+                <td>h3</td>
+                <td>&lt;h3&gt;</td>
+                <td>&lt;/h3&gt;</td>
+                <td>Acts as a Tertiary Header.</td>
+            </tr>
+        </table>
+        <br>
+        <p>
+            Again, these tags usually last <strong>one</strong> line. Unless there is a lot of text inside, it is <i>one</i> line. Thus, it is called in-line. However, there are other things in HTML that are 'inline'. It is not just restricted to inline elements.
+            <br>
+        </p>
+    </div>
+    
+    <div>
+        <h2>Connotation</h2>  
+        <p>
+            In-Line also has different connotations. One is used in CSS, when defining where to put the CSS. One such style is In-Line CSS (the others are External CSS and Embedded CSS). This means adding more code inside block-level elements. Block elements, you ask?
+            <br> <br> 
+            I'm talking about the elements like &lt;p&gt; and &lt;/p&gt; or &lt;html&gt; and &lt;/html&gt;. <br>
+            You know, the <strong>big</strong> boys of the tags (they can house in-line elements like &lt;strong&gt; and &lt;/strong&gt;).
+ 
+        </p>
+        <h3>Here are a few examples.</h3>
+        <ul style="list-style-type: square;">
+            <li>&lt;p style="text-align:center; color:black;"&gt;Hello&lt;/p&gt;</li>
+            <li>&lt;ul style="list-style-type: square;"&gt;Hello&lt;/ul&gt;</li>
+            <li>&lt;article style="text-align: center;"&gt;Hello&lt;/article&gt;</li> 
+        </ul>
+        <p>
+            <a href="https://www.w3schools.com/htmL/html_blocks.asp">Click Me to Learn More about In-Line and Block-Level Elements.</a><br>
+            You may ask. All these 3 options to do CSS... Which is the best? Well, the answer goes to <i>External CSS</i>. In-Line CSS looks awkward and is difficult to understand for beginners. Embedded CSS is similar to External CSS, but is defined in the HTML file. However, if multiple pages are using the same CSS rules, you would have to copy and paste all that code into all the other HTML files. External CSS accomodates for all of these flaws that the other 2 have.
+        </p>
+    </div>
+    
+    <div>
+        <h2 class='article'>Resources</h2>
+        <p>Click on one of the links below to be taken to another part of the website! Explore the different amount of elements in HTML!</p>
+    </div>
+    
+    
+    <nav>
+        |&nbsp;<a href="index.html">Home</a> |&nbsp;
+        <a href="inline.html">In-Line Elements</a> |&nbsp;
+        <a href="block.html">Block Elements</a> |&nbsp;
+    </nav>
+    
+	<script src="/js/w3c.js"></script>
+</body>
+</html>
