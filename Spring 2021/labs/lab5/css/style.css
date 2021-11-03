@@ -1,0 +1,98 @@
+/*
+    Author:				Michael Ng
+	Date:				3/8/2021
+	Assignment:			Lab 5
+	Purpose:			Directories and Images
+*/
+
+/* The body sets the website's background color and default font(s). */
+body {
+    background-color: floralwhite;               /* Sets background color to Floral White*/
+    font-family: Arial, Helvetica, sans-serif;   /* Sets the font to something other than serif.*/
+    
+}
+
+/* specifications for the header class */
+header{
+    margin-bottom: 20px;        /* Margins put space between the text field and other fields below the margin.*/
+}
+
+/* Text on the header */
+.headerText{
+    font-size: 30px;            /* Sets the font size for text under the headerText class to 30 pixels */
+    font-family: sans-serif;    /* Sets the font to sans-serif */
+    position: absolute;         /* The absolute position disregards all elements after the position, and can act as a background or a fixed field.*/
+    top: 20px;                  /* moves the text field down by 20 pixels */
+    left: 20px;                 /* moves the text field right by 20 pixels */
+    color: white;               /* Changes the text color to white */
+    
+}
+/* CSS formatting for the lightning_tornado picture */
+.container1{
+    padding-left: 50px;         /* Padding is the space between the content and its borders. */
+    position: absolute;
+}
+/* Formatting for the text beside the lightning_tornado picture */
+.containerText{
+    font-size: 1.1em;           /* Sets the font size to x1.1 of its original size and emphasizes it. */
+    margin-left: 260px;         /* Distance from the left edge of the website to the content's borders. */
+    margin-right: 35%;          /* Distance from the right edge of the website to the content's borders. */
+    margin-bottom: 90px;        /* Adds distance between the content's bottom border and fields further down. */
+    padding-left: 10px;         /* Adds distance between the content and its left borders.*/
+    padding-right: 10px;        /* Adds distance between the content and its right borders. */
+    padding-bottom: 10px;       /* Adds distance between the content and its bottom borders. */
+}
+/* Formatting for the poem in the middle of the website */
+.container2{
+    font-size: 1.1em;               /* Changes the font size to x1.1 of its original size and emphasizes it. */
+    font-style: oblique;            /* Italicizes the text. */
+    margin-left: 150px;             /* Distance between website's left edge and content's left border. */
+    padding-left: 50px;             /* Distance between left border and content. */
+    padding-top: 20px;              /* Distance between top border and content. */
+    border-left-style: double;      /* Changes the type of the border. */
+}
+/* Formatting for the poem's writer, shown below the poem. */
+.container2Text{
+    font-size: 1.1em;            /* Refer to comments above - Very similar class */
+    font-style: oblique;
+    margin-left: 150px;
+    padding-left: 20px;
+    padding-bottom: 20px;               /* Adds distance between content and its bottom border. */
+    border-left-style: double;
+}
+/* Formatting for the bottom-most picture on the website. */
+.container3{
+    text-align: right;      /* Aligns the picture to the right side of the website */
+    margin-bottom: 50px;    /* Distance from the bottom border to field borders below */
+}
+
+/* Formatting for the text accompanying the bottom-most picture. */
+.container3Text{
+    font-size: 1.1em;       /* Sets the font size to x1.1 of its original size and emphasizes it. */    
+    margin-left: 50px;     /* Adds distance between the left edge of the website and the content's borders. */
+    margin-right: 250px;    /* Adds distance between the right edge of the website and the content's borders. */
+    
+}
+/* Formatting for words that, as implied, have onomatopoeia on the website. */
+/* This Formatting also helps separate the content. */
+.onomatopoeia{
+    font-size: 2em;               /* Super Emphasis: Change the font size to x2 its original size and emphasizes it. */ 
+    font-family: sans-serif;      /* Sets the font to sans-serif. */ 
+    margin-bottom: 25px;          /* Distance between the content below it and this content's borders. */ 
+    margin-left: 600px;           /* Distance between the content's left border and the left edge of the website. */ 
+    margin-top: 20px;             /* Distance between the content above the content and the content's top border. */ 
+}
+
+/* Formatting for the website's footer. */
+/* Note: Cannot use copyright because the design is already used by Professor Ramsey in the diagram. */
+footer{
+    height: 18px;                       /* Sets the height of the blue-ish bar to 18 pixels */ 
+    background: rgba(0, 60, 76, .8);    /* Sets the color of the bar to the blue-ish color. */
+    width: 100%;                        /* Sets the width of the bar to the website's width. */     
+    
+    color: white;                       /* Sets the color o the text to white. */ 
+    text-align: right;                  /* Aligns the text right. */ 
+    padding: 5px;                       /* Adds distance between the text and the bar's borders. */ 
+}
+
+
