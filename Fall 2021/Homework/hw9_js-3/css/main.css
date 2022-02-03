@@ -1,0 +1,162 @@
+/*  Styling for [project] */
+header, section, footer, aside, nav, main, article, figure {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  content: "";
+  clear: both;
+  font-size: 1em;
+  font-family: "source Sans Pro", sans-serif;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+
+.modal-inner {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  color: #ddd;
+  text-align: justify;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.ok {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  color: #ccccff;
+  width: 200px;
+  height: 60px;
+  font-size: 1.8rem;
+  border-radius: 40px;
+  border: 1px solid #ccccff;
+}
+.ok:hover {
+  transition: 0.3s;
+  color: #ffcc;
+  border-color: #ffcccc;
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+}
+.container .container-inner {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 850px;
+  transform: translateX(-50%);
+  padding: 20px;
+  font-size: 20px;
+  font-size: 1.2rem;
+  background: rgba(225, 225, 225, 0.5);
+}
+.container .container-inner p:nth-child(4)::first-letter {
+  display: block;
+  font-family: "Cinzel Decorative", cursive;
+  color: #9e0e0e;
+  float: left;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-right: 1px;
+  margin-top: 0;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  background: #323232;
+  margin: 0;
+  padding: 0;
+}
+header h1 {
+  color: #ddd;
+  text-align: center;
+}
+
+.image-float, .image-right, .image-left {
+  display: block;
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+.image-left {
+  float: left;
+  margin-right: 15px;
+}
+
+.image-right {
+  float: right;
+  margin-left: 15px;
+}
+
+.clear-both {
+  clear: both;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    z-index: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+.hide {
+  animation-name: fade-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* Styling for the Play/Pause/Volume Up/Volume Down Controls */
+.controls {
+  width: 150px;
+  position: absolute;
+  right: 5px;
+  top: 65px;
+}
+.controls img {
+  cursor: pointer;
+}
+.controls img:hover {
+  transition: 0.2s;
+  background: #c19a9a73;
+}
+
+.active {
+  background: #c19a9a73;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */
