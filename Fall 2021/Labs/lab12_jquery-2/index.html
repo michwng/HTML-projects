@@ -1,0 +1,54 @@
+<!-- index.html
+ -     Author:          Michael Ng
+ -     Date:            2021-11-17
+ -     Last revised:    2021-11-17
+ -     Description:     Using jQuery regex to validate user input
+ -                      name and email address
+ -->
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='author' content='Michael Ng'>
+    <meta name='date' content='2021-11-17'>
+    <meta name='description' content='Using jQuery regex to validate user input'>
+    <meta name='keywords' content='CSCI 1720, Lab 12'>
+    <link rel='stylesheet' href='css/main.css'>
+    <title>Lab 12</title>
+
+</head>
+
+<body>
+    <h2>Email Validation</h2>
+    <form action='#' method='#' id='contactForm'>
+        <table class='mytable'>
+            <tr>
+                <td><label for='name'>Name:</label></td>
+                <td class='name'>
+                    <input id='name' type='text' 
+                    placeholder='Please enter your name'>
+                </td>
+            </tr>
+            <tr>
+                <td><label for='email'>Email:</label></td>
+                <td class='email'>
+                    <input id='email' type='text' 
+                    placeholder='Please enter your email'>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                    <input type='submit' class='contactForm-buttons' 
+                    id='submit' value='Send'>
+                    <input type='reset' class='contactForm-buttons' 
+                    id='reset' value='Clear'>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id='modal'></div>
+    
+    <script src='js/jQuery3.4.1.min.js'></script>
+    <script src='js/validator.js'></script>
+</body>
+</html>

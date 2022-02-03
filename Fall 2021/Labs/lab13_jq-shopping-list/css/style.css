@@ -1,0 +1,122 @@
+/*
+		Author: 			Michael Ng
+		Date:				2021-11-24
+        Last revised:       2021-11-24
+		Purpose				CSS for jQ To Shopping List assignment.
+*/
+
+/* ***** BASIC SELECTORS ***** */
+
+body {
+	margin: 0;
+	font-family: 'Rock Salt', cursive;
+	box-sizing: border-box;
+	background: #f8f8f8;
+}
+
+h1 {
+	width: 500px;
+	margin: auto;
+	text-align: center;
+	color: #444;
+	padding-bottom: 5px;
+	border-bottom: 4px double #444;
+}
+
+label {
+	margin-left: 25px;
+}
+
+ul {
+	margin: 25px 0 15px 35%;
+	list-style-image: url('../images/sq-bullet.png') !important;
+	border-left: 1px solid #eee;
+}
+
+li {
+	padding-bottom: 5px;
+	padding-right: 10px;
+	font-size: 1.2em;
+    list-style-image: url('../images/sq-bullet.png') !important;
+}
+
+li:hover {
+	cursor: no-drop;
+}
+
+
+
+/* ***** CLASSES ***** */
+
+/* Formatting for Containers */
+.container {
+	width: 900px;
+	margin: 40px auto;
+	box-shadow: 5px 5px 10px #9dbdf2;
+	min-height: 300px;
+	background: #fff;
+	position: relative;
+	padding: 10px;
+}
+
+/* Positioning for the Shopping List Icon */
+.img-top-right {
+	display: block;
+	width: 100px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+/* Positioning for the Input Field */
+div.addItem {
+	width: 200px;
+	position: absolute;
+	bottom: 5px;
+	left: 25px;
+	padding-top: 25px;
+}
+
+/* Formatting for the note on how to delete items */
+.note {
+	text-indent: 60px;
+	font-size: .7em;
+	color: red;
+	margin-top: 0;
+}
+
+/* adds a border */
+.listContainer {
+	border-bottom: 4px double #ddd;
+}
+	
+/* ***** IDs ***** */
+
+/* Styling for Print and Clear buttons */
+#clearList, 
+#printList {
+	width: 150px;
+	height: 40px;
+	font-size: 1.2rem;
+	border-radius: 20px; 
+	background: #9dbdf2;
+	font-family: 'Rock Salt', cursive;
+	position: absolute;
+	bottom: 15px;
+	line-height: 0;
+	right: 5px;
+}
+
+/* cascading styling for print button to make it 
+ * line up to the left of the clear button. */
+#printList {
+	right: 160px;
+}
+
+/* Hover effect to cue the user 
+ * that the button is selected. */
+#clearList:hover,
+#printList:hover {
+	transition: .2s;
+	box-shadow: 0 0 8px #edc08e;
+}

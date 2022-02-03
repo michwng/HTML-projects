@@ -1,0 +1,253 @@
+
+//    main.scss
+//        Author:       Jack
+//        Date:         2021-04-04
+//        Last revised: 2021-04-10
+//        Description:  Styling for JavaScript/AJAX project
+
+// variables
+$red: rgb(141, 4, 4);
+$white: #eee;
+
+// older browser compatibility
+header, section, footer, aside, nav, main, article, figure {
+  display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    content: "";
+    clear: both;
+    font-size: 16px;
+    line-height: 1.1;
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    
+    p {
+        padding-left: 15px;
+    }
+}
+
+.jumbotron {
+    background-image: linear-gradient(to right, rgb(141, 4, 4) 35%, transparent);
+    margin: 0;
+    color: #eee;
+    font-weight: 100;
+    border-bottom: .5px solid rgb(3, 3, 145);
+    margin-bottom: 20px;
+    border-radius: 0;
+
+    nav {
+        position: relative;
+        top: -60px;
+        right: -50px;
+        margin: 0;
+        text-align: right;
+        padding-right: 25px;
+        height: 1rem;
+        
+        a {
+            display: inline-block;
+            width: 65px;
+            text-align: center;
+            color: rgb(89, 5, 100);
+            font-family: 'Urban-Regular', sans-serif;
+            font-size: 1rem;
+
+            &:hover {
+                transition: .5s;
+                color: rgb(33, 44, 199);
+            }
+        }
+    }
+}
+
+#modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(255,255,255,.95);
+    z-index: -1;
+    overflow: hidden;
+    
+    .modal-inner {
+        
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        
+        height: 400px;
+        width: 500px;
+        border-radius: 15px;
+        padding: 25px;
+        background: #eee;
+        color: #007bff;
+        
+        label {
+            display: block;
+            position: relative;
+            font-size: 1.1rem;
+            top: 20px;
+            left: 20px;
+            width: 100%;
+        }
+        
+        input[type='text'],
+        input[type='password'] {
+            display: block;
+            width: 450px;
+            height: 20px;
+            font-size: 1.4rem;
+            padding: 20px;
+            color: #00a177;
+            text-align: center;
+            background: transparent;
+            border-width: 0;
+            border-bottom: 2px solid #007bff;
+            outline: none;
+        }
+    }
+    &.showModal {
+        animation-name: fade-in;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+    
+    &.hideModal {
+        animation-name: fade-out;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+    
+    #submitBtn,
+    #cancelBtn,
+    #okBtn,
+    #signinOkBtn,
+    #regSubmit,
+    #regCancel,
+    #adminOkBtn {
+        display: block;
+        width: 150px;
+        height: 60px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 800;
+        background: rgba(255,50,50,1);
+        color: rgba(225,225,225,1);
+        border-radius: 50px;
+        border-width: 0;
+        position: fixed;
+        left: 50%;
+        bottom: 10px;
+        z-index: 10;
+        
+        &:hover,
+        &:active {
+            transition: .5s;
+            background: rgba(200,50,50,1);
+            color: rgba(255,255,255,1);
+            outline: none;
+        }
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        z-index: 1;
+    }
+    to {
+        opacity: 1;
+        z-index: 1;
+        display: block;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+        z-index: 1;
+    }
+    to {
+        opacity: 0;
+        // z-index: -1;
+        display: none;
+    }
+}
+
+.col-centered {
+    padding: 0 20% !important;
+    margin: auto;
+
+    
+}
+
+.row {
+    &>h1,
+    &>h2,
+    &>h3 {
+        display: block;
+        margin-left: -50px;
+        width: 100%;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 20px 0;
+    
+    li {
+        margin-bottom: 20px;
+    }
+        
+    &.check {
+        li::before {
+            margin-right: 5px;
+            content: "\2714";
+        }
+    }
+    li>ul.arrow {
+        li::before {
+            margin-right: 5px;
+            content: "\279b" !important;
+        }
+    }
+}
+
+.red {
+    color:rgb(141, 4, 4);
+}
+
+#tab {
+    width: 100%;
+    margin: 0 15px;
+    
+    tr:nth-child(even) {
+        background: rgba(100,200,150,.1);
+    }
+    
+    td {
+        padding: 5px;
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+    
+    th {
+        padding: 0 5px 15px 5px;
+        text-align: center;
+        border-bottom: .5px solid rgba(100,200,150,.5);
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+}
+

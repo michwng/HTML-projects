@@ -1,0 +1,74 @@
+	<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>jQuery Shopping List</title>
+		
+		<!-- 
+			Author: 			Michael Ng
+			Date:				2021-11-24
+			Last Revised: 		2021-11-24
+			Purpose				Create a dynamic list with JQ.
+		-->
+		
+		<!-- Link to CSS file -->
+		<link rel='stylesheet' href='css/style.css'>
+		
+		<!-- Font from Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel='icon' href='images/list_icon.png'>
+	</head>
+	<body>
+		<!-- container - holds all of the web page content. -->
+		<div class='container'> 
+			<section>
+			<!-- the following image should appear in the top right corner of the 
+				 display -->
+				<img class='img-top-right' src='images/check-list-hi.png' alt='list icon'>
+				
+				<h1>Shopping List</h1>
+			<!-- we're going to nest the actual list in its own div, which allows us
+				 to separate the list from the input field and the buttons. Add
+				 the listContainer class below -->
+				 
+				<div class='listContainer'> 
+					<ul id='shoppingList'></ul>
+				</div>
+				<br>
+			</section>
+			
+			<br> <!-- this was necessary to create whitespace between the 
+					  section and the footer elements -->
+					  
+			<!-- this will contain the user controls -->
+			<footer>
+				<!-- the following div contains the user input field and instructions
+					 for how to delete items. --> 
+				<div>    <!-- Add the addItem class here -->
+					<label for='item'>Add Item: </label>
+					<input type='text' id='item' autofocus>
+					
+					<p class='note'>* Click on an item to remove it</p>
+				</div>
+				
+				<!-- print list and clear list buttons -->
+				<button id='printList'>Print</button>
+				<button id='clearList'>Clear</button>
+			</footer>
+			
+			
+		</div>
+		<!-- include the jQuery library and JQ file you've created
+		   - We do this after the page content
+		   - so it will load after the page loads - 
+		   - When a js file is very large, 
+		   - this will let the page load before the JavaScript does 
+		-->
+            	
+		<script src='js/jquery3.3.3-min.js'></script>
+		<script src='js/list.js'></script>
+		<script src='/js/w3c.js'></script>
+	</body>
+	</html>
