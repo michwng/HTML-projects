@@ -1,0 +1,146 @@
+/*
+    Name:               style.css 
+    Author:             Michael Ng
+    Date:               September 2, 2021
+    Last Revised:       September 2, 2021
+    Assignment:         Lab 2
+    Purpose:            Explore advanced CSS and CSS 3
+*/
+
+/* I always add the following to my CSS files. It's 
+    called the CSS clearfix, which clears any CSS
+    that may have carried over from a previous page
+*/
+body {
+    margin: 0;
+    clear: both;
+    content: '';
+    /* Font family edited in CSS to be Roboto Condensed. */
+    font-family: 'Roboto Condensed', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-size: 1em;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 12px #ddd;
+    columns: 2;
+    column-gap: 25px;
+    column-rule: 1px dashed #999;
+    text-align: justify;
+}
+.container {
+    min-width: 360px;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 0 10px;
+    font-size: 1.4rem;
+}
+
+.container a {
+    text-decoration: none;
+    background: rgba(210, 210, 250, .5);
+    padding: 0 3px;
+}
+
+.container a:hover {
+    transition: .2s;
+    border-bottom: 2px dashed rgba(58,11,228,0.5);
+    background: rgba(250, 210, 210, .5);
+}
+
+header, 
+nav {
+    width: 100%;
+    background: #444;
+    color: #eee;
+    margin: 0;
+    padding: 5px 0;
+    z-index: 1;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    min-width: 360px;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+
+nav {
+    /* Nav bar is wonky (on edge). Could not figure out a way to debug this. */
+    position: sticky;
+    top: 0;
+    height: 40px;
+    margin-bottom: 25px;
+}
+
+nav a {
+    display: inline-block;
+    width: 120px;
+    margin-right: 10px;
+    color: #eee;
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+nav a:hover {
+    transition: .4s;
+    border-bottom: 2px solid gold;
+    color: gold;
+}
+
+.image-left, .image-right {
+    display: inline-block;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(210, 210, 255, 1);
+}
+
+.image-left {
+    float: left;
+    margin-right: 25px;
+    margin-left: 5px;
+}
+
+.image-right {
+    float: right;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+
+img:hover {
+    transition: .3s;
+    filter: sepia(125%);
+}
+
+table {
+    min-width: 320px;
+    max-width: 768px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+td:nth-child(1) {
+    width: 15%;
+    font-style: italic;
+}
+
+tr:nth-child(even) {
+    background: rgba(0,0,200,.1);
+}
+
+#zen {
+    border-width: 0;
+    border-radius: 50%;
+}
+

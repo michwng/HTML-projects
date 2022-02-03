@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  clear: both;
+  content: "";
+}
+
+body {
+  padding: 20px;
+  background: #1a90e2;
+  font-family: sans-serif;
+}
+
+section {
+  background: #f2f2f2;
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  border: 0.5px solid #000;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    width: 500px;
+    margin: auto;
+  }
+}
+.button {
+  width: 15%;
+  min-width: 48px;
+  min-height: 48px;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover,
+.buttonFocus {
+  filter: brightness(120%);
+  box-shadow: 4px 2px 5px #000;
+}
+
+.newItemEntry {
+  position: sticky;
+  top: 0;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+.newItemEntry form {
+  display: flex;
+  justify-content: space-between;
+}
+.newItemEntry form label {
+  position: absolute;
+  left: -10000px;
+}
+.newItemEntry form input[type=text] {
+  width: 80%;
+  font-size: 1.25rem;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 0.75rem;
+  outline: none;
+}
+.newItemEntry form input[type=text]:focus,
+.newItemEntry form input[type=text]:hover {
+  box-shadow: 4px 2px 5px #000;
+}
+.newItemEntry form button {
+  font-size: 1.25rem;
+  background: #4caf50;
+  padding: 0.75rem;
+}
+@media only screen and (min-width: 768px) {
+  .newItemEntry form button {
+    font-size: 1.5rem;
+  }
+}
+
+.listContainer {
+  min-height: 60vh;
+  padding: 0.75rem;
+}
+.listContainer .listTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.listContainer .listTitle button {
+  font-size: 1rem;
+  background: #9f6060;
+  padding: 0 0.1rem;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .listContainer .listTitle button {
+    padding: 0 0.5rem;
+  }
+}
+.listContainer .listTitle hr {
+  width: 100%;
+}
+.listContainer .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+}
+.listContainer .item input[type=checkbox] {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin-right: 1.2rem;
+}
+.listContainer .item input[type=checkbox]:focus + label {
+  text-decoration: line-through;
+}
+.listContainer .item label {
+  font-size: 1.1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

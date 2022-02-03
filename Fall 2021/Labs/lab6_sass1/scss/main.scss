@@ -1,0 +1,91 @@
+// _variables.scss
+//      Author:         Michael Ng
+//      Date:           2021-10-04
+//      Last Revised:   2021-10-04
+//      Description:    Define Sass variables for lab6_sass1
+
+@use 'variables' as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    content: '';
+    clear: both;
+    margin: 0;
+    background: $bg;
+    color: $text-color;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 22px;
+
+    a {
+        text-decoration: none;
+        font-weight: 200;
+        color: $bright-yellow;
+
+        &:hover {
+            transition: .2s;
+            color: $a-hover;
+        }
+    }
+}
+
+h1,
+h2,
+h3 {
+    color: $text-color;
+    text-align: $text-center;
+}
+
+h1 {
+    font-size: $font-xl;
+    border-bottom: .5px solid $text-color;
+}
+
+h2 {
+    font-size: $font-lg;
+}
+
+h3 {
+    font-size: $font-sm;
+}
+
+.container {
+    min-width: $min-w;
+    max-width: $max-w;
+    margin: 20px auto;
+    padding: 3rem;
+    background: $bg-secondary;
+    border: $main-border;
+}
+
+.shadow {
+    box-shadow: $shadow;
+}
+
+img {
+    width: $pic-width;
+
+    &.img-left {
+        float: left;
+        margin-right: 2rem;
+    }
+
+    &.img-right {
+        float: right;
+        margin-left: 2rem;
+    }
+}
+
+p {
+    width: $para-w;
+    padding: 3rem;
+}
+
+p.notice {
+    @extend p;
+    background: $bg;
+    border: $main-border;
+    color: adjust-hue(#7fffd4, 30deg);
+}

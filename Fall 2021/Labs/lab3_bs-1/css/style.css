@@ -1,0 +1,79 @@
+/* style.css
+ *    Author:          Michael Ng
+ *    Date:            2021-09-15 
+ *    Last revised:    2021-09-15 
+ *    Purpose:         Styling for Bootstrap project
+ *
+ *    Note:            I went a little overboard with the comments in
+ *                     the instructions, meaning to explain what each
+ *                     rule does as you type it in. For this assignment,
+ *                     you don't have to recreate all the comments. Just
+ *                     add the rules
+ */
+
+body, .container {
+    box-sizing: border-box;
+    font-family: 'Philosopher', sans-serif;
+    margin: auto;
+    min-width: 340px;
+    max-width: 1024px;
+}
+
+header, footer {
+    height: 4em;
+    background: #041e42;
+    color: #ffc72c;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    box-sizing: inherit;
+}
+
+footer {
+    height: 2em;
+    padding: .25em 0;
+    text-indent: 2em;
+    text-align: left;
+    font-size: 1em;
+}
+
+blockquote {
+    padding: .2em .5em;
+    font-style: italic;
+    border-left: 4px double #333;
+}
+
+figure {
+    margin: 1em auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 1em;
+}
+
+img.cent {
+    display: block;
+    border: 1px solid #041e42;
+    margin: auto;
+    max-width: 800px;
+    min-width: 300px;
+}
+
+p{
+    text-indent: 1em;
+}
+
+.row {
+    border-bottom: 1px solid #041e42;
+}
+
+/* remove the border from the third row. Thrid row is the fourth child element of the container. */
+.row:nth-child(4) {
+    border-width: 0;
+}

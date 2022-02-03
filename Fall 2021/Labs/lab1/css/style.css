@@ -1,0 +1,180 @@
+/*
+	Name:       	Michael Ng
+	Course:    	    CSCI-1720-940
+	Assignment: 	Lab 1 - Review
+	Due Date:   	08/30/2021
+	Purpose:    	Review
+*/
+
+/*  After completing each instruction below, save your work and refresh the page in the browser
+	
+*/
+
+body {
+    /*  I always add the following lines to my main CSS file to 'reset' any values
+        that may have been set by a previous page 
+    */
+    margin: 0;
+    clear: both;
+    content: '';
+    background-color: #333;
+	font-size: 1.1em;
+	
+    /* Add 'Roboto' to the font-family list */
+    font-family: sans-serif, Roboto;
+        
+    /*  We didn't talk about this property in 1210, but what it does is make the overall 
+        size of the box equal to a combination of its content, padding, and border. 
+        Great for aligning different elements								
+    */    
+    box-sizing: border-box;        
+    
+    /*  You can choose your own colors here. just make sure they don't suck. remember 
+        paletton.com can help
+    */
+    background: rgba(0, 85, 64, .8);
+    color: #000000;
+}
+
+/*
+	Make the link's color red and remove the underline
+*/
+a:link {
+	color: red;
+    text-decoration: unset;
+}
+
+/* 
+	Pseudo-class for when links have been visited. The 
+	text color should be #D0E
+ */
+a:visited {
+    color: #D0E;
+}
+
+/*  Pseudo-class for when links are hovered over. The text color should be blue; background 
+    color light gray (#F9F9F9). Also give it a padding value of 3px
+ */
+a:hover {
+    color: blue;
+    background: #F9F9F9;
+    padding: 3px;
+}
+
+/*  The aside is an (I think) interesting side note about LOTR the width should be 70% of 
+    the container's width; margin top and bottom 25px; margin left and right auto; padding
+    20 pixels all around; font-size == 1.1rem and style italic; with a one pixel solid light
+    gray border
+*/
+.aside {
+    width: 70%;
+	margin-top: 25px;
+    margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	font-size: 1.1rem;
+	font-style: italic;
+	border-style: solid;
+	border-width: 1px;
+	border-color: lightgray;
+}
+
+/*  properties for the image that appears in the aside. it should be block display; 200 pixels
+    wide; with margins 10 pixels top and bottom, auto left and right
+*/
+.aside img {
+    display: block;
+	width: 200px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 
+	Indent paragraph's text 50 pixels 
+*/
+p {
+	text-indent: 50px;
+}
+
+/*  Create .container and .header classes. These classes will position the content in the center
+    of the display. max- and min-width	(1024px and 680px) provide some responsiveness to the 
+    display size. margin top and bottom should be 25 pixels top and bottom and auto left and right
+ */
+div.container,
+div.header {
+    max-width: 1024px;
+	min-width: 680px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*  cascade rules for the container element: font size 1.2rem; padding 20 pixels all around; line height
+    1.6rem
+*/
+div.container {
+    font-size: 1.2rem;
+	padding: 20px;
+	line-height: 1.6rem;
+}
+
+/* 
+	Add background color and color rules to set the header apart from the content. Background
+	should be #D1DAE0 and text #000, or compatible colors of your choice. text should be centered
+ */
+div.header {
+	background-color: #D1DAE0;
+	color: #000;
+	text-align: center;
+}
+
+/*  class to float the image left and set its margins to top, 0; right, 10px; bottom, 0; and left, 0 
+*/
+.image-left {
+	float: left;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+/*  Float the image right and set its margins to top, 0; right, 0; bottom, 0; and left, 20px
+*/
+.image-right {
+	float: right;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+}
+p.clear {
+  clear: both;
+}
+
+/* *************************************************************************************************
+    Log in to your account on the server using FileZilla. The host is csci1720.net, Username is your 
+    ETSU login, and	password is the same one we've been using
+	
+    Once you're logged in, navigate to your local lab folder on the left and double-click on 'labs' 
+    on the right. Right-click in the right-side files window and select, 'Create directory and enter it'. 
+
+    Name the new directory 'lab1'. Select all your files and folders; then drag and drop them (left to right) into the new directory
+	
+    On the right, right-click mlk.html and select 'Copy URL(s) to clipboard. Return to the browser and paste the URL into the navigation bar 
+	
+    IMPORTANT! The URL will look something like: ftp://ramseyjw@csci1720.net/labs/lab1/index.html
+    You will need to delete the 'ftp://' part and change the '@' to a dot ('.'). It will then
+    (correctly) resemble ramseyjw.csci1720.net/labs/lab1/index.html - Then press Enter
+	
+    Once the page is loaded, Ctrl+click the two icons in the lower right corner. This will feed 
+    the page in to the validators in new tabs. Check each to ensure that the files are error-
+    free. If there are errors, fix them, save your work, and re-upload the saved files...and 
+    recheck them
+	
+    Once your work is error-free, copy the url and paste it into a new document in NPP. Save the 
+    file as 'lab1.txt' and upload it to the 'lab1' folder on D2L	
+************************************************************************************************ */

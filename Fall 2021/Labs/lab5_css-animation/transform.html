@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+	<meta charset='utf-8'>
+    <title>Lab 5</title>
+    <meta name='author' content='Jack'>
+    <meta name='date' content='2021-02-10'>
+    <meta name='description' content='css animation'>
+    <meta name='keywords' content='csci, 1720, css, transforms'>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='css/transform.css'>
+    <link rel='stylesheet' href='css/animations.css'>
+    <link rel='icon' href='images/razer.png'>
+    
+    <script src="https://use.fontawesome.com/ab37b821df.js"></script>
+
+    <!--
+       - transform.html
+       -     Author:         Jack
+       -     Date:           2021-02-11
+       -     Last revised:   2021-02-15
+       -     Description:    CSS transformations
+     -->
+
+     <style>
+        #transformDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em;
+            color: white;
+        }         
+     </style>
+</head>
+	
+<body>
+    <h1>CSS Transforms</h1> 
+
+    <!-- settings Padding -->
+    <div class='col-md-4'>
+
+        <!-- Sliders add/subtract as needed	-->
+
+        <!-- slider 1  scale -->
+        <label class="control-label" for="scale">Scale</label>
+        <input class='slider' id="scale" type="range" min=".5" max="4" step='.5' value="1">
+        <div class="setting-value">
+            <span class='value' id="scale__val">1</span><span class='val-label'></span>
+        </div>
+
+        <!-- slider 2  opacity -->
+        <label class="control-label" for="opacity">Opacity</label>
+        <input class='slider' id="opacity" type="range" min="0" max="1" step='.05' value="1">
+        <div class="setting-value">
+            <span class='value' id="opacity__val">0</span><span class='val-label'></span>
+        </div>
+
+        <!-- slider 3  skewX -->
+        <label class="control-label" for="skewX">Skew-X</label>
+        <input class='slider' id="skewX" type="range" min="-75" max="75" step='5' value="0">
+        <div class="setting-value">
+            <span class='value' id="skewX__val">0</span><span class='val-label'> deg</span>
+        </div>
+
+        <!-- slider 4  skewY -->
+        <label class="control-label" for="skewY">Skew-Y</label>
+        <input class='slider' id="skewY" type="range" min="-75" max="75" step='5' value="0">
+        <div class="setting-value">
+            <span class='value' id="skewY__val">0</span><span class='val-label'> deg</span>
+        </div>
+
+        <!-- slider 5  rotate -->
+        <label class="control-label" for="rotate">Rotate</label>
+        <input class='slider' id="rotate" type="range" min="-360" max="360" step='5' value="0">
+        <div class="setting-value">
+            <span class='value' id="rotate__val">0</span><span class='val-label'> deg</span>
+        </div>
+
+        <!-- slider 6  translate X -->
+        <label class="control-label" for="translateX">Translate X</label>
+        <input class='slider' id="translateX" type="range" min="-100" max="300" step='10' value="0">
+        <div class="setting-value">
+            <span class='value' id="translateX__val">0</span><span class='val-label'> px</span>
+        </div>
+
+        <!-- slider 7  translate Y -->
+        <label class="control-label" for="translateY">Translate Y</label>
+        <input class='slider' id="translateY" type="range" min="-100" max="300" step='10' value="0">
+        <div class="setting-value">
+            <span class='value' id="translateY__val">0</span><span class='val-label'> px</span>
+        </div>
+        
+        <div>
+            <form action='#' method='#'>
+                <fieldset>
+                    <legend>Translate 2D</legend>
+                    <label for='x'>Translate X (pixels)</label>
+                    <input type='text' id='x' placeholder="#">
+                    <label for='y'>Translate Y (pixels)</label>
+                    <input type='text' id='y' placeholder="#">px
+                    <input type='submit' id='ok' value='OK'>
+                </fieldset>
+            </form>
+        </div>
+        
+        
+
+        <div class='canvas'>
+            <div id='transformDiv'>&#9787;</div>
+        </div>
+        <div class='cntr' style='top:-120px;left:70%;'>
+            As you can see, we can perform a variety of transformations to a given element (this list isn't exhaustive, but shows some of the more common ones)
+        </div>
+    </div>
+    
+    
+    
+    <a href='index.html'>
+        <span class='cta'>
+            <i class='fa fa-chevron-right'></i>
+            <i class='fa fa-chevron-right'></i>
+            <i class='fa fa-chevron-right'></i>
+        </span>
+    </a>
+
+ <script src='js/transform.js'></script> 
+
+</body>
+</html>
+

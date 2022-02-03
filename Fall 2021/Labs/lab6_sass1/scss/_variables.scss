@@ -1,0 +1,36 @@
+// _variables.scss
+//      Author:         Michael Ng
+//      Date:           2021-10-04
+//      Last Revised:   2021-10-04
+//      Description:    Define Sass variables for lab6_sass1
+
+// Colors
+$text-color: #eee;
+$bg: #5e0a2a;
+$container-color: #852648;
+$text-negative: #c8c8c8cc;
+$bg-secondary: #85364b;
+$dark-blue: #005;
+$bright-yellow: #fff436;
+$pale-yellow: #fffbbb;
+$a-hover: #aaa;
+
+// Dimensions
+$pic-width: 10em;
+$min-w: 328px;
+$max-w: 1024px;
+$para-w: 95%;
+
+// Misc
+$main-border: .5px solid $bright-yellow;
+$shadow: 10px 10px 8px $pale-yellow;
+
+// Text
+$text-left: left;
+$text-center: center;
+$text-right: right;
+$text-justify: justify;
+$font-sm: 1em;
+$font-md: 1.2em;
+$font-lg: 1.6em;
+$font-xl: 2.5em;

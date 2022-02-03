@@ -1,0 +1,103 @@
+//  _listContainer.scss
+//  Author:         Michael Ng
+//  Date:           2021-11-03
+//  Last Revised:   2021-11-03
+//  Description:    Lab 10's CSS
+
+.listContainer {
+    min-height: 60vh;
+    padding: 0.75rem;
+
+    .listTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        button {
+            font-size: 1rem;
+            background: $clear-button-color;
+            padding: 0 0.1rem;
+            margin-bottom: 0.5rem;
+            @include mq(768px) {
+                padding: 0 0.5rem;
+            }
+        }
+
+        hr {
+            width: 100%;
+        }
+    }// End of .listTitle
+
+    .item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 1rem;
+
+        input[type='checkbox'] {
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+            margin-right: 1.2rem;
+        }
+
+        input[type='checkbox']:focus + label {
+            text-decoration: line-through;
+        }
+
+        label {
+            font-size: 1.1rem;
+        }
+    } //End of .item
+}   //end of .listContainer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <title>Lab 5</title>
+    <meta name='author' content='Jack'>
+    <meta name='date' content='2021-02-10'>
+    <meta name='description' content='css display and visibility'>
+    <meta name='keywords' content='csci, 1720, css, display, visibility'>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='css/animations.css'>
+    <script src="https://use.fontawesome.com/ab37b821df.js"></script>
+    <link rel='icon' href='images/razer.png'>
+
+    <!--
+       - display_vs_visibility.html
+       -     Author:         Jack
+       -     Date:           2021-02-10
+       -     Last revised:   2021-02-15
+       -     Description:    Demonstrate the difference between display
+       -                     and visibility properties
+    -->
+  </head>
+
+  <body>
+    <h1>Display vs. Visibility</h1>
+    <div class="col-md-6">
+        <div class='a' id='a'></div>
+        <button id='displayNone' class='btn'>Remove Me</button>
+        <div>
+            <p id='displayCode'><span class='displayCodeBlue'>display</span>: <span class='displayCodeOrange'>block</span>;</p>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class='b' id='b'></div>
+        <button id='hideMe' class='btn'>Hide Me</button>
+        <div>
+            <p id='visibilityCode'><span class='displayCodeBlue'>visibility</span>: <span 
+        class='displayCodeOrange'>visible</span>;</p>
+        </div>
+    </div>
+    
+    <div class='cntr'>
+        As you can see, the <span class='mono-blue'>display</span> property removes the element from the DOM while the <span class='mono-blue'>visibility</span> property can hide an element, but does not remove it 
+    </div>
+    <a href='transform.html'>
+        <span class='cta'>
+            <i class='fa fa-chevron-right'></i>
+            <i class='fa fa-chevron-right'></i>
+            <i class='fa fa-chevron-right'></i>
+        </span>
+    </a>
+    
+    <button id='reLoad'>Reload</button>
+
+	<script src='js/display_vs_visibility.js'></script>
+	<script src='js/reload.js'></script>
+	
+  </body>
+</html>

@@ -1,0 +1,404 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20211019112558
+Username: LAPTOP-9FQIRHRR\mwnmw
+RunAs User: LAPTOP-9FQIRHRR\mwnmw
+Configuration Name: 
+Machine: LAPTOP-9FQIRHRR (Microsoft Windows NT 10.0.19043.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 15932
+PSVersion: 5.1.19041.1237
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1237
+BuildVersion: 10.0.19041.1237
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is lab8_js-intro.txt
+PS C:\Users\mwnmw\OneDrive\Desktop\College Homework\Fall 2021\Intermediate Web (CSCI 1720-940)\ngmw01.csci1720.net\labs\lab8_js-intro> node
+Welcome to Node.js v14.18.1.
+Type ".help" for more information.
+> let x = 8;
+undefined
+> let y = 9;
+undefined
+> let z = x + y;
+undefined
+> console.log(x, y, z);
+8 9 17
+undefined
+> x == y;
+false
+> x = y;
+9
+> x == y;
+true
+> let firstName = 'Samuel';
+undefined
+> let lastName = 'Clemmons';
+undefined
+> console.log(firstName + ' ' + lastName);
+Samuel Clemmons
+undefined
+> firstName = 'Sam';
+'Sam'
+> console.log(firstName + ' ' + lastName);
+Sam Clemmons
+undefined
+> console.log ((firstName + ' ' + lastName).length);
+12
+undefined
+> let tmpArray = [ 1, 2, 'three', 4];
+undefined
+> console.log(tmpArray);
+[ 1, 2, 'three', 4 ]
+undefined
+> console.log(tmpArray[1]);
+2
+undefined
+> let newArray = [9, 4, 10, 2, 1, 5, 9];
+undefined
+> console.log(newArray);
+[
+  9, 4, 10, 2,
+  1, 5,  9
+]
+undefined
+> newArray.sort();
+[
+  1, 10, 2, 4,
+  5,  9, 9
+]
+> newArray.sort(function(a,b) {return a-b});
+[
+  1, 2,  4, 5,
+  9, 9, 10
+]
+> newArray.shift();
+1
+> console.log(newArray);
+[ 2, 4, 5, 9, 9, 10 ]
+undefined
+> newArray.push(25);
+7
+> console.log(newArray);
+[
+  2,  4,  5, 9,
+  9, 10, 25
+]
+undefined
+> newArray.pop();
+25
+> newArray.length;
+6
+> newArray.push(44);
+7
+> newArray.push(4);
+8
+> newArray.length;
+8
+> let person = {
+... firstName = 'John',
+... lastName = "Doe",
+... age: 50,
+... eyeColor: "blue"
+... }
+...
+...
+Array                 ArrayBuffer           Atomics               BigInt
+BigInt64Array         BigUint64Array        Boolean               Buffer
+DataView              Date                  Error                 EvalError
+FinalizationRegistry  Float32Array          Float64Array          Function
+Infinity              Int16Array            Int32Array            Int8Array
+Intl                  JSON                  Map                   Math
+NaN                   Number                Object                Promise
+Proxy                 RangeError            ReferenceError        Reflect
+RegExp                Set                   SharedArrayBuffer     String
+Symbol                SyntaxError           TextDecoder           TextEncoder
+TypeError             URIError              URL                   URLSearchParams
+Uint16Array           Uint32Array           Uint8Array            Uint8ClampedArray
+WeakMap               WeakRef               WeakSet               WebAssembly
+_                     _error                assert                async_hooks
+buffer                child_process         clearImmediate        clearInterval
+clearTimeout          cluster               console               constants
+crypto                decodeURI             decodeURIComponent    dgram
+diagnostics_channel   dns                   domain                encodeURI
+encodeURIComponent    escape                eval                  events
+fs                    global                globalThis            http
+http2                 https                 inspector             isFinite
+isNaN                 module                net                   os
+parseFloat            parseInt              path                  perf_hooks
+process               punycode              querystring           queueMicrotask
+readline              repl                  require               setImmediate
+setInterval           setTimeout            stream                string_decoder
+sys                   timers                tls                   trace_events
+tty                   undefined             unescape              url
+util                  v8                    vm                    wasi
+worker_threads        zlib
+
+__proto__             hasOwnProperty        isPrototypeOf         propertyIsEnumerable
+toLocaleString        toString              valueOf
+
+constructor
+
+firstName             lastName              newArray              tmpArray
+x                     y                     z
+
+...
+Array                 ArrayBuffer           Atomics               BigInt
+BigInt64Array         BigUint64Array        Boolean               Buffer
+DataView              Date                  Error                 EvalError
+FinalizationRegistry  Float32Array          Float64Array          Function
+Infinity              Int16Array            Int32Array            Int8Array
+Intl                  JSON                  Map                   Math
+NaN                   Number                Object                Promise
+Proxy                 RangeError            ReferenceError        Reflect
+RegExp                Set                   SharedArrayBuffer     String
+Symbol                SyntaxError           TextDecoder           TextEncoder
+TypeError             URIError              URL                   URLSearchParams
+Uint16Array           Uint32Array           Uint8Array            Uint8ClampedArray
+WeakMap               WeakRef               WeakSet               WebAssembly
+_                     _error                assert                async_hooks
+buffer                child_process         clearImmediate        clearInterval
+clearTimeout          cluster               console               constants
+crypto                decodeURI             decodeURIComponent    dgram
+diagnostics_channel   dns                   domain                encodeURI
+encodeURIComponent    escape                eval                  events
+fs                    global                globalThis            http
+http2                 https                 inspector             isFinite
+isNaN                 module                net                   os
+parseFloat            parseInt              path                  perf_hooks
+process               punycode              querystring           queueMicrotask
+readline              repl                  require               setImmediate
+setInterval           setTimeout            stream                string_decoder
+sys                   timers                tls                   trace_events
+tty                   undefined             unescape              url
+util                  v8                    vm                    wasi
+worker_threads        zlib
+
+__proto__             hasOwnProperty        isPrototypeOf         propertyIsEnumerable
+toLocaleString        toString              valueOf
+
+constructor
+
+firstName             lastName              newArray              tmpArray
+x                     y                     z
+
+...
+Array                 ArrayBuffer           Atomics               BigInt
+BigInt64Array         BigUint64Array        Boolean               Buffer
+DataView              Date                  Error                 EvalError
+FinalizationRegistry  Float32Array          Float64Array          Function
+Infinity              Int16Array            Int32Array            Int8Array
+Intl                  JSON                  Map                   Math
+NaN                   Number                Object                Promise
+Proxy                 RangeError            ReferenceError        Reflect
+RegExp                Set                   SharedArrayBuffer     String
+Symbol                SyntaxError           TextDecoder           TextEncoder
+TypeError             URIError              URL                   URLSearchParams
+Uint16Array           Uint32Array           Uint8Array            Uint8ClampedArray
+WeakMap               WeakRef               WeakSet               WebAssembly
+_                     _error                assert                async_hooks
+buffer                child_process         clearImmediate        clearInterval
+clearTimeout          cluster               console               constants
+crypto                decodeURI             decodeURIComponent    dgram
+diagnostics_channel   dns                   domain                encodeURI
+encodeURIComponent    escape                eval                  events
+fs                    global                globalThis            http
+http2                 https                 inspector             isFinite
+isNaN                 module                net                   os
+parseFloat            parseInt              path                  perf_hooks
+process               punycode              querystring           queueMicrotask
+readline              repl                  require               setImmediate
+setInterval           setTimeout            stream                string_decoder
+sys                   timers                tls                   trace_events
+tty                   undefined             unescape              url
+util                  v8                    vm                    wasi
+worker_threads        zlib
+
+__proto__             hasOwnProperty        isPrototypeOf         propertyIsEnumerable
+toLocaleString        toString              valueOf
+
+constructor
+
+firstName             lastName              newArray              tmpArray
+x                     y                     z
+
+... Start-Transcript -Path .\lab8_js-intro.txt
+> let person = {
+... firstName: "John",
+... lastName: "Doe",
+... age: 50,
+... eyeColor: "blue"
+... };
+undefined
+> console.log(person);
+{ firstName: 'John', lastName: 'Doe', age: 50, eyeColor: 'blue' }
+undefined
+> console.log(person.age);
+50
+undefined
+> person.age = 25;
+25
+> console.log(person.age);
+25
+undefined
+> let personTwo = {
+... firstName: 'John';
+firstName: 'John';
+                 ^
+
+Uncaught SyntaxError: Unexpected token ';'
+> let personTwo = {
+... firstName: 'John',
+... lastName: 'Buck',
+... age: 35;
+age: 35;
+       ^
+
+Uncaught SyntaxError: Unexpected token ';'
+> let personTwo = {
+... firstName: 'John',
+... lastName: 'Buck',
+... age: 35,
+... eyeColor: 'green'
+... };
+undefined
+> person == personTwo;
+false
+> personTwo.lastName = 'Doe';
+'Doe'
+> personTwo.age = 25;
+25
+> personTwo.eyeColor = 'blue';
+'blue'
+> person == personTwo;
+false
+> let personCompare = personTwo;
+undefined
+> personCompare == personTwo;
+true
+> personCompare === personTwo;
+true
+> function multiply(a,b) {
+... return a * b;
+... }
+undefined
+> multiply (2, 210);
+420
+> function toCelsius(f) {
+... let c = (5/9) * (f-32);
+... c = c.toFixed(2);
+... return c;
+... }
+undefined
+> toCelsius(70);
+'21.11'
+> function sRoot(n){
+... return Math.sqrt(n).toFixed(2);
+... }
+undefined
+> sRoot(42);
+'6.48'
+> let n = 9;
+undefined
+> if (n < 10 {
+if (n < 10 {
+           ^
+
+Uncaught SyntaxError: Unexpected token '{'
+> if n < 10) {
+if n < 10) {
+   ^
+
+Uncaught SyntaxError: Unexpected identifier
+> if (n < 10) {
+... console.log(n + ' is less than 10');
+... }
+9 is less than 10
+undefined
+>  n = 2-;
+ n = 2-;
+       ^
+
+Uncaught SyntaxError: Unexpected token ';'
+> n = 20;
+20
+... console.log(n + ' is less than 10');
+... } else {
+... console.log(n + ' is greater than 10');
+... }
+20 is greater than 10
+undefined
+> n = 10;
+10
+> if (n < 10) {
+... console.log(n + ' is less than 10');
+... } else if ( n == 10){
+... console.log(n + ' is equal to 10');
+... } else {
+... console.log(n + ' is greater than 10');
+... }
+10 is equal to 10
+undefined
+> let fruit = 'Apple';
+undefined
+> switch(fruit){
+... case 'Banana':
+... console.log('Bananas are good');
+... break;
+... case 'Orange':
+... console.log('Oranges are ok');
+... break;
+... case 'Apple':
+... console.log('How bout them apples?');
+... }
+How bout them apples?
+undefined
+> for(i = 0; i < 10; i++){
+... console.log(i);
+... }
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+> i = 0;
+0
+> while (i < 10){
+... console.log(i);
+... i += 1;
+... }
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+> i = 0;
+0
+> for(i in person) {
+... console.log(person[i]);
+... }
+John
+Doe
+25
+blue
+undefined
+> .exit
+PS C:\Users\mwnmw\OneDrive\Desktop\College Homework\Fall 2021\Intermediate Web (CSCI 1720-940)\ngmw01.csci1720.net\labs\lab8_js-intro> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20211019155943
+**********************

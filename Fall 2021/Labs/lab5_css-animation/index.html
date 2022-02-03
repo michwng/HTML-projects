@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>Lab 5</title>
+    <meta name='author' content='Jack'>
+    <meta name='date' content='2021-02-10'>
+    <meta name='description' content='css animation'>
+    <meta name='keywords' content='csci, 1720, css, animation'>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='css/animations.css'>
+    <script src="https://use.fontawesome.com/ab37b821df.js"></script>
+    <link rel='icon' href='images/razer.png'>
+
+    <!--
+       - index.html
+       -     Author:         Jack
+       -     Date:           2021-02-10
+       -     Last revised:   2021-02-15
+       -     Description:    Practice with CSS animation
+    -->
+</head>
+<body>
+    <h1>Looping Animations</h1>
+    
+    <div class='ball' id='ball' style='background:rgba(255,255,255,1);'></div>
+      
+    <div class='cntr'>
+        We can animate many properties, including <span class='mono-blue'>scale</span>, <span class='mono-blue'>position</span>, <span class='mono-blue'>opacity</span>, and <span class='mono-blue'>color</span>. Set the animation to loop by using <span class='mono-blue'>animation-iteration-count:</span><span class='mono-orange'>infinite</span><span class='mono'>;</span>
+    </div>
+       
+    <a href='landing.html'>
+        <span class='cta'>
+            <i class='fa fa-chevron-right'></i>
+            <i class='fa fa-chevron-right'></i>
+            <i class='fa fa-chevron-right'></i>
+        </span>
+    </a>
+    
+    <button id='reLoad'>Reload</button>
+
+	<script src='js/reload.js'></script>    
+	<script src='js/ball.js'></script>    
+</body>
+</html>    

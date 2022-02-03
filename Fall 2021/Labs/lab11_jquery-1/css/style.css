@@ -1,0 +1,88 @@
+/*
+	Name:           Michael Ng
+	Class:			CSCI 1720 940
+	Date:           2021-11-09
+	Description:	CSS for jQuery lab
+	
+*/
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	min-width: 320px;
+	max-width: 1024px;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+	border-bottom: 4px double #444;
+}
+
+ul {
+	margin-top: 2em;
+}
+
+li {
+	list-style:none;
+}
+
+li.fields {
+    margin: 0;	
+    padding: 1em 0;
+}
+
+li.title {
+    cursor: n-resize;	
+    font-weight: bold;
+    font-size : 1.5em;
+    line-height: 2em;
+    background: #444;
+	color: #EEE;
+    border-top: 1px solid white;
+}
+
+.hide { display: none;}
+
+input {
+	margin-bottom: 1em;
+}
+
+.title {
+	border-radius: 50px;
+}
+
+.note {
+	width: 15em;
+	color: red;
+	position: relative;
+	top: 1em;
+	right: 0;
+}
+
+.chevron {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: gold;
+}
+
+#info-form {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+.required-field {
+    color: red;
+}
+
+.inner {
+    width: 95%;
+    margin: auto;
+}
+
+li {
+    position: relative;
+    margin-left: -10px;
+}

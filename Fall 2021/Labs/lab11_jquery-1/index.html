@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<title>Tabbed Form</title>
+	
+	<!--
+		Name:			Michael Ng
+		Date:			2021-11-09
+		Class:			CSCI 1720 940
+		Description:	Form for jQuery lab
+	-->
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="media/icon.png">
+
+</head>
+<body>
+	<h1>Tell Us About Yourself</h1>
+	<form name="myform" onsubmit="return validateForm()" method="get" action="process.php">
+	<ul>
+		<!-- Accordion 1 -->
+		<li class="title">Who Are You?<i class="fa fa-chevron-down fa-xxl chevron"></i></li>
+		<li class="fields">
+			<!-- Form 1 -->
+			<label class='required-field'>*First Name</label><br>
+			<input name="first_name" id="first_name" class="req" type="text"><br>
+			
+			<!-- Form 2 -->
+			<label>Middle Name</label><br>
+			<input name="middle_name" id="middle_name" type="text"><br>
+			
+			<!-- Form 3 -->
+			<label>Last Name</label><br>
+			<input name="last_name" id="last_name" type="text"><br>
+			
+			<!-- Form 4 -->
+			<label class='required-field'>*Email</label><br>
+			<input name="email" id="email" class="req" type="text"><br>
+		</li>
+
+		<!-- Accordion 2 -->
+		<li class="title">Where Are You?<i class="fa fa-plus fa-xxl chevron"></i></li>
+		<li class="fields">
+			<!-- Form 1 -->
+			<label>City</label><br>
+			<input name="city" id="city" type="text"><br>
+			
+			<!-- Form 2 -->
+			<label class='required-field'>*State</label><br>
+			<input name="state" id="state" class="req" type="text"><br>
+			
+			<!-- Form 3 -->
+			<label>Country</label><br>
+			<input name="country" id="country" type="text"><br>
+		</li>
+
+		<!-- Accordion 3 -->
+		<li class="title">What Do You Do?<i class="fa fa-plus fa-xxl chevron"></i></li>
+		<li class="fields">
+			<!-- Form 1 -->
+			<label class='required-field'>	*Occupation</label><br>
+			<input name="occupation" id="occupation" class="req" type="text"><br>
+			
+			<!-- Form 2 -->
+			<label>Company</label><br>
+			<input name="company" id="company" type="text"><br>
+			
+			<!-- Form 3 -->
+			<label>Company Location</label><br>
+			<input name="location" id="location" type="text"><br>
+		</li>
+	</ul>
+	<input type="submit" value="Submit Form">
+	<input type="reset" value="Reset Form">
+	<p class="note">
+		* Required
+	</p>
+	</form>
+	
+	<script src="/js/w3c.js"></script>
+	<script src='js/jQuery3.4.1.min.js'></script>
+	<script src='js/animation.js'></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

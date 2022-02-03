@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>History of the Web</title>
+    <!--
+            Name:               index.html 
+            Author:             Michael Ng
+            Date:               September 2, 2021
+            Last Revised:       September 2, 2021
+            Assignment:         Lab 2
+            Purpose:            Explore CSS 3            
+    -->
+    
+    <!-- Feel free to use your own font! Remember to update your CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font changed from Open Sans to Roboto Condensed. -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" -->
+    
+    <!-- Font-Awesome icons -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    
+    <!-- Your CSS -->
+    <link rel='stylesheet' href='css/style.css'>
+    
+</head>
+<body>
+    <header>
+        <h1>CSS Timeline</h1>
+    </header>
+    
+    <nav>
+        <a href='#'>Home</a>
+        <a href='#'>Firebug</a>
+        <a href='#'>Chrome</a>
+        <a href='#'>CSS 3</a>
+        <a href='#'>SASS</a>
+        <a href='#'>Grid</a>
+    </nav>
+    
+    <h1>Cascading Style Sheets</h1>
+    
+    <div class='container'>
+        <p>
+            <img src='images/css1.png' alt='css selector' class='image-left'>
+            The web’s history is filled to the brim with stops and starts and wrong turns. It is a technology that was, after all, designed and built by a shifting and growing community. And every once in a while, that community needs a spark to inspire change. I’d like to point out two such moments, which when squeezed together, are responsible for the rise of Cascading Style Sheets on the web.
+        </p>
+        <p>
+            In the earliest days of the web, there was only HTML. This allowed developers to create structured websites, but it could do very little in terms of design and style. There were lots of proposed solutions, but Cascading Style Sheets (CSS), developed by Håkon Wium Lie back in 1994, came out on top. In the proposed specification, HTML would continue to be the way that websites were marked up, but CSS was the language that described how these pages should look. With CSS, web designers could add custom fonts, colors, layouts and unique designs to their webpages.
+        </p>
+        <p>
+            But CSS got off to a bit of a rocky start. Still, in 1997 it became an official recommendation of the W3C and began to make its way into Netscape Navigator and Internet Explorer 4, the dominant browsers of the time.
+       </p>
+        <p>
+            The problem was, these implementations were a bit, let’s say, scattered.
+            
+            Sites that looked one way in IE might look completely different in Netscape Navigator, and vise versa, because CSS properties were executed differently.
+       </p>
+        <p>
+            <img src='images/meyer.jpg' alt='eric meyer' class='image-right'>
+            
+            There were some that took issue with this. Eric Meyer, for instance, started testing CSS inconsistencies, and creating support charts he shared freely on his blog. These charts would show which CSS properties were supported in each browser as a reference for other developers. Around that time, the Web Standards Project (WaSP) was founded in order to promote web standards, consistency, and interoperability across browsers. A few members, Meyer among them, created a branch of WaSP known as the CSS Action Committee. You may not have heard that name though, because they labeled themselves the CSS Samurai. Together, the Samurai posted reports on CSS issues in browsers and began spreading them around.
+       </p>
+        <p>
+            It was one of these members, Todd Fahrner, that lit our first spark.
+       </p>
+        <p>
+            Fahrner decided it was time to, quite literally, put browsers to the test. He threw up a simple webpage which he called the “Box Acid Test.” The page itself was fairly simple. When rendered properly, the page contained a series of positioned, multi-colored boxes (as its namesake suggests).
+       </p>
+        <p>
+            The key here though is “when rendered properly.” Fahrner’s test was made up of a variety of CSS selectors, used to apply fonts, style form elements and arrange boxes on the page. If a browser incorrectly supported CSS, the page itself would fall apart, and it became very easy to tell what was wrong.
+       </p>
+        <p>
+            At the beginning, every browser failed. But that was the point. 
+            <img src='images/css2.jpg' alt='css selector' class='image-left'>
+            The Box Acid Test gave developers a quick reference for what was supported where, and browser implementers an example to build off of. The CSS Samurai also used the Box Acid Test to verify what progress was made. They even published the results from the test in harrowing reports like <a href='https://archive.webstandards.org/css/winie/' target='_blank'>&quot;IE’s Top 10 CSS Problems&quot;</a> in an effort to prompt change from the browsers. An effort that ultimately worked. Little by little, CSS become widely and consistently supported in browsers. The need for the CSS Samurai faded away, and they eventually went their separate ways.
+       </p>
+        <p>
+            <img src='images/box-acid.jpg' alt='box acid test' class='image-right'>
+            
+            The Box Acid Test did its job, pushing browsers in the right direction. In the years that followed, CSS became a reliable tool for web developers to create unique, colorful and robust designs. If only they would use it.
+       </p>
+        <p>
+            In the chaotic years of mixed browser support, CSS became pretty unpopular among web designers. Website creators instead leaned on HTML data tables (or spacer gifs), which allowed them to lay things out to exact dimensions. This wasn’t the fault of developers necessarily. There was simply no other choice. At one time, not using CSS was actually a best practice. That is, until Dave Shea lit up the way forward.
+       </p>
+        <p>
+            Shea was a web developer. He had confidence in CSS. He knew what the problem was too. The web just didn’t have enough examples. Sure, some had started to experiment, like Doug Bowman in an ambitious redesign for Wired created entirely with CSS. But there weren’t that many others. So Shea decided that he would show instead of tell.
+       </p>
+        <p>
+            In May of 2003, Shea created <a href='http://www.csszengarden.com/' target='_blank'>CSS Zen Garden</a>. The garden was actually a collection of webpages. Each webpage had exactly the same HTML and content. The only difference was the CSS. The first 5 examples were created by Shea himself. And with just a few tweaks of CSS, these pages were incredibly different.
+       </p>
+        <p>
+            <img src='images/css4.png' alt='zen garden' class='image-left' id='zen'>
+            Shea’s next move was to ask the public for their own submissions.
+       </p>
+        <p>
+            User created stylesheets came pouring in, and Shea posted them all to his website. In the diversity of the designs, it was easy to recognize the versatility of CSS. All sorts of experiments happened in the Zen Garden. Some designers, for instance, made use of a new technique from Bowman (of Wired fame) that made it possible to swap out text with custom images. Others used float based layouts, background colors and judicious padding.
+       </p>
+        <p>
+            The idea caught on. People used the Zen Garden to show their bosses and clients what CSS could do. Designers and developers borrowed techniques and code from the examples. There were plenty of hacks (some were quite fun!), but they complemented web standards rather than fight against them.
+       </p>
+        <p>
+            And best of all, CSS finally became trustworthy.
+        </p>
+    </div>    
+           
+    <table>
+        <tr>
+            <th colspan='2'>CSS Milestones</th>
+        </tr>
+        <tr>
+            <td>
+                Firebug
+            </td>
+            <td>
+                It’s no doubt that Firefox was a major player in giving us the web we have today. Just a few years after Firefox’s 2004 debut, Firebug was introduced in 2006. It’s not an overstatement to say that all modern day DevTools are modeled after Firebug. The influence Firebug had over web development was huge
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Chrome
+            </td>
+            <td>
+                As big of a deal as Firefox was (and is, really), Chrome is just as big. Chrome doesn’t ship with any major operating system yet it commands over half of the global browser market share, which is remarkable.
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CSS3
+            </td>
+            <td>
+                The way CSS standards works is that the spec is broken into independent modules that all move along at their own pace. That all started after CSS3! CSS3 was kind of a ~2013 marketing effort and a line in the sand, as it were
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Preprocessing
+            </td>
+            <td>
+                The rise of preprocessing has been impressive. Like any good idea, it started out as something rather ridiculed, then later understood and finally embraced. Preprocessing helped us manage large CSS codebases that were getting away from us by providing an abstraction layer that clicked with developers. Variables! Mixins! Nesting! Includes! 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Flexbox &amp; Grid
+            </td>
+            <td>
+                Layout is a huge, huge (huge) deal. It’s probably the most important thing CSS offers. Between Flexbox and Grid (if it’s fair to lump them together like that) represent incredible innovation in the layout capability we have on the web. These tools will dominate layout on the web for likely the next couple decades on the web, and feel like they were designed in such a way they are up to the task!
+            </td>
+        </tr>
+    </table>
+    <!-- from https://mediatemple.net/blog/tips/five-huge-css-milestones/ -->
+
+    <script src='/js/w3c.js'></script>
+</body>
+</html>

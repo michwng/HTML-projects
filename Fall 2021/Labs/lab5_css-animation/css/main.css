@@ -1,0 +1,195 @@
+/*
+- main.css
+-     Author:         Jack
+-     Date:           2021-02-10
+-     Last revised:   2021-02-10
+-     Description:    Practice with CSS animation
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    content: '';
+    margin: 0;
+    clear: both;
+    width: 100%;
+    min-height: 100%;
+    background: black;
+    overflow-y: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cntr {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    clear:both;
+    display: block;
+    width: 800px;
+    height: 7rem;
+    padding: 15px;
+    background: #d9d9d9;
+    color: #444;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: auto;
+    border-left: 40px solid #008;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.cta {
+    color: #eee;
+    font-size: 2em;
+    position: fixed;
+    bottom: 5px;
+    right: 15px;
+}
+
+.cta:hover {
+    transition: .2s;
+    color: #ffaaaa;
+}
+
+i.fa-chevron-right {
+    display: inline-block;
+    margin-right: -15px;
+}
+
+.mono,
+.mono-blue,
+.mono-orange {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 1.9rem;
+}
+
+.mono-blue {
+    color: #008;
+}
+
+.mono-orange {
+    color: #d79419;
+}
+#reLoad {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    width: 140px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    border-radius: 50px;
+    border-width: 0;
+    background: rgba(100,255,100,.5);
+    outline: none;
+}
+
+#reLoad:hover {
+    transition: .3s;
+    box-shadow: 0 0 20px rgba(50,255,50,1);
+    border: .5px solid #555;
+    cursor: pointer;
+}
+
+/* CSS for display_vs_visibility.hmtl */
+.a, .b {
+    width: 400px;
+    height: 300px;
+    background: rgba(255,100,100,.5);
+    margin-top: 40px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.b {
+    background: rgba(100,100,255,.5);
+}
+
+.btn {
+    position: relative;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    border-radius: 50px;
+    border-width: 0;
+    background: #5050ff;
+    color: #ddd;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: .3s;
+    box-shadow: 0 0 20px rgba(240,240,240,1);
+    border: .5px solid #555;
+}
+
+.col-md-6,
+.col-md-4,
+.col-md-8 {
+    width: 45%;
+    display: inline-block;
+    float: left;
+    margin-left: 50px;
+}
+
+.col-md-4 {
+    width: 40%;
+}
+
+.col-md-8 {
+    width: 65%;
+}
+
+#displayCode,
+#visibilityCode {
+    position: relative;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 400px;
+    background: #d8d8d8;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.8rem;
+}
+
+#visibilityCode {
+    left: 50%;
+}
+
+.displayCodeBlue {
+    color: #008;
+}
+
+.displayCodeOrange {
+    color: #d79419;
+}
+
+h1,
+h2,
+h3,
+label,
+legend {
+    color: #eee;
+}
+
+
+
+
+
+
+
+
