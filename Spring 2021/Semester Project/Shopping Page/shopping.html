@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Michael Ng">
+    <meta name="description" content="CSCI 1210 Semester Project">
+    <meta name="keywords" content="CSCI, 1210, Semester Project">
+    
+    <title>Shopping</title>
+    <link rel="icon" href="images/twistedVinylLogo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <!-- Import 2 fonts: Cookie and Roboto. -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <!--
+        Author:     Michael Ng
+        Date:       4/14/2021
+        Team:       Wonderous, Weary Webmasters (Group B)        
+        Purpose:    Semester Project
+    -->
+    
+</head>
+<body>
+    
+    <!-- The website's ribbon. Contains Logo, Search Bar, Text, and Shopping Cart -->
+    <header> 
+        <img src="images/twistedVinylLogo.png" alt="Logo" class="logo">
+        <h1>Twisted Vinyl</h1>
+        <!-- A horizontal rule altered to be in a certain position and color. -->
+        <hr class="header">
+        <h2>
+        <nav> <!-- Navigation Bar with tentative page titles -->
+            <a href="http://waretp.csci1210.com/projects/semesterprojects/Twisted%20Vinyl%20Home/home.html">Home</a> |
+            <a href="http://ervines.csci1210.com/project/gallery/gallery.html">Gallery</a> |
+            <a href="http://hendersonaw.csci1210.com/semester-project/about-us.html">Contact Us</a>
+        </nav>
+        </h2>
+        
+        
+        <!-- The Search Bar. Allow the consumer to search for an item. -->
+        <form method="get">
+            <input type="text" name="search" placeholder="What are you looking for?" size="20">
+            <input type="submit" name="submit">
+        </form>
+        
+        
+        <!-- The image of the Shopping Cart and the amount of items in the Cart. -->
+        <a href="#"><img src="images/Shopping%20Cart.png" alt="Shopping Cart" class="shoppingCart">
+        <img src="images/Num%20Circle.png" alt= "Items in Cart" class="numCircle"> 
+        <p class="cartNum">0</p>
+        </a>
+    </header>
+    
+    <br>
+    
+    <!-- Another Nav menu that allows the user to "filter" search results -->
+    <nav class="selectMenu">
+        <a href="#"><box class="selected">All Products</box></a>
+        <a href="#"><box class="unselected">T-Shirts</box></a>
+        <a href="#"><box class="unselected">Vinyls</box></a>
+        <a href="#"><box class="unselected">Supplementation</box></a>
+        <a href="#"><box class="unselected">Decorations</box></a>
+    </nav>
+    
+    <!-- The main part of the website. Contains all the products. -->
+    <div>
+        <!-- Basic Layout: Product Image - AddItem link - Product Description -->
+        <!-- Product Image -->
+        <img src="images/Products/MamaWifeBlessedLifeShirt.png" alt="T-Shirt with the text 'Mama Wife Blessed Life' imprinted on it." class="product">
+        <!-- Add Item Button -->
+        <a href="#"><img src="images/AddItem.png" alt="Add Item" class="addItem"></a>
+        <!-- Product Description -->
+        <p class="description">A T-Shirt with the text 'Mama Wife Blessed Life' imprinted on it.</p>
+        
+        <!-- Product Image -->
+        <img src="images/Products/PeaceLoveSunshineShirt.png" alt="T-Shirt with the text: 'peace - love - sunshine' imprinted on it." class="productRight">
+        <!-- Add Item Button -->
+        <a href="#"><img src="images/AddItem.png" alt="Add Item" class="addItemRight"></a>
+        <!-- Product Description -->
+        <p class="descriptionRight">A T-Shirt with the text: 'peace - love - sunshine' imprinted on it.</p>
+    
+        <br>
+        
+        <!-- Product Image -->
+        <img src="images/Products/TheRandolphFamilyTray.png" alt="A tray with the text 'The Randolph Family' imprinted in the tray." class="product">
+        <!-- Add Item Button -->
+        <a href="#"><img src="images/AddItem.png" alt="Add Item" class="addItem"></a>
+        <!-- Product Description -->
+        <p class="description">A tray with the text 'The Randolph Family' imprinted inside.</p>
+        
+        <!-- Product Image -->
+        <img src="images/Products/WoofHangar.png" alt="A coat hangar featuring a dog on a plate and their tail acting as the hook." class="productRight">
+        <!-- Add Item Button -->
+        <a href="#"><img src="images/AddItem.png" alt="Add Item" class="addItemRight"></a>
+        <!-- Product Description -->
+        <p class="descriptionRight">A coat hangar featuring a dog on a plate and their tail acting as the hook.</p>
+        
+        <br>
+        
+        <!-- Product Image -->
+        <img src="images/Products/ThisBottleTastesLike1865.png" alt="A cloth decoration with the text 'This Bottle Tastes Like 1865' on it." class="product">
+        <!-- Add Item Button -->
+        <a href="#"><img src="images/AddItem.png" alt="Add Item" class="addItem"></a>
+        <!-- Product Description -->
+        <p class="description">A cloth decoration with the text 'This Bottle Tastes Like 1865'</p>
+        
+        <!-- Product Image -->
+        <img src="images/Products/WhiteHouseFrenchies.png" alt="A T-shirt with the text 'WhiteHouse Frenchies' imprinted on it with a picture of frenchie dogs in a ring of paws." class="productRight">
+        <!-- Add Item Button -->
+        <a href="#"><img src="images/AddItem.png" alt="Add Item" class="addItemRight"></a>
+        <!-- Product Description -->
+        <p class="descriptionRight">A T-shirt with the text 'WhiteHouse Frenchies' imprinted on it with a picture of frenchie dogs in a ring of paws.</p>
+        
+        <br>
+        
+        <!-- Product Image -->
+        <img src="images/Products/DecoratedJars.png" alt="Several decorated jar lids that have text imprinted based on your wants." class="product">
+        <!-- Add Item Button -->
+        <a href="#"><img src="images/AddItem.png" alt="Add Item" class="addItem"></a>
+        <p class="description">Decorated jar lids based on your style needs.</p>
+    </div>
+    
+    <!-- The footer for the website -->
+    <footer>
+        <p style="font-size: 20px; margin:10px;margin-top: 0px;margin-left: 0px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://waretp.csci1210.com/projects/semesterprojects/Twisted%20Vinyl%20Home/home.html">Homepage</a> &nbsp;&nbsp;|
+        &nbsp;&nbsp;
+            <a href="http://ervines.csci1210.com/project/gallery/gallery.html">Gallery</a> &nbsp;&nbsp;|
+        &nbsp;&nbsp;
+            <a href="http://hendersonaw.csci1210.com/semester-project/about-us.html">Contact Us</a>
+        </p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twisted Vinyl (C) 2021, all rights reserved.
+        <p class="facebook">Join our FaceBook Group:</p>
+        <a href="https://www.facebook.com/groups/742053149672458/?ref=share"><img src="images/Facebook%20Logo.png" alt="Facebook Logo" class="facebook"></a>
+    </footer>
+    
+    
+    <script src='/js/w3c.js'></script> <!-- HTML/CSS validation script -->
+</body>
+</html>

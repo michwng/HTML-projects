@@ -1,0 +1,282 @@
+/*
+    Author:				Michael Ng
+	Date:				4/14/2021
+	Assignment:			CSCI 1210(901) Semester Project
+	Purpose:			Semester Project
+*/
+
+/** CSS Formatting for the Header **/
+header {
+    position: relative;         /** The position of the header affects the location of relative elements in the same line or after the header. **/
+    width: 1072px;              /** The Width of the Header. (1072 pixels) **/
+    height: 110px;              /** The Height of the Header. (110 pixels) **/
+    display:block;              /** Display the Header as a Block. **/
+    margin-left: auto;          /** Used in tandem with margin-right: auto; to center the Header at the top of the website. (If using a computer, resize the window horizontally.) **/
+    margin-right: auto;         /** Sets distance from the header's right side to the website border. **/
+    
+    
+    background: linear-gradient(360deg, #46A6C2 0%, #13809F 100%), #13809F; /** The background color of the website. ALlows from a linear gradient from hexadecimal color code #13809F to #46A6C2**/
+    border: 2px solid #000000;                /** Creates a 2 pixel solid black border around the header. **/
+}
+
+/** CSS Formatting for the Body **/
+body {
+    width: 100%;                    /** Set the width of the entire webpage to 100% of the screen's resolution. **/
+    margin:0px;                     /** Sets the distance between inside content and the website border (in this case, 0 pixels.) **/
+    background-color: #13809F;      /** Set the background color to hexadecimal code #13809F (A dark teal.) **/
+}
+
+/** CSS Formatting for Image Elements (Logo Class) **/
+img.logo {
+    position: absolute;         /** The position of the image will not affect other relative elements. **/
+    width: 110px;               /** The width of the image. (In this case, 110 pixels) **/
+    height: 110px;              /** The height of the image. (In this case, 110 pixels) **/
+    left: 0px;                  /** The distance of the element from another element's left border. **/
+    top: 0px;                   /** The distance of the element from the top border of an element. **/
+}
+
+/** CSS Formatting for H1 Elements **/
+h1 {
+    position: absolute;         /** The position of the element will not affect other relative elements. **/
+    height: 64px;               /** The height of the element (in this case, 64 pixels). **/
+    left: 195px;                /** The distance of the element from another element's left border. **/
+    top: 0px;                   /** The distance of the element from the top border of another element. **/   
+    margin: 5px 10px;           /** Sets the margin to be 5 pixels vertically and 10 pixels horizontally. (Distance from other elements or borders) **/
+    margin-top: 0px;            /** Sets the vertical margin to 0 pixels. Overrides the previous margin. **/
+    display: block;             /** Display the H1 element as a block. **/
+
+    
+    font-family: 'Cookie', cursive;     /** Sets the font to 'Cookie' for h1 elements. A cursive font is used if 'Cookie' is not able to be used. **/
+    font-weight: normal;                /** Sets the 'boldness' of the font to normal. **/
+    font-size: 55px;                    /** Sets font size to 55 pixels. **/
+    text-align: center;                 /** Align text to be at the center of the element. **/
+    color: #000000;                     /** Set the color of the text tto black. **/
+}
+
+/** CSS Formatting for a Horizontal Rule in the Header. **/
+hr.header {
+    display: block;             /** Display the horizontal rule as a block. **/
+    position: absolute;         /** Position of the HR element doesn't affect other relative elements. **/
+    border-color: black;        /** Set the color of the HR element's border to black. **/
+    width: 250px;               /** Set the width of the HR element to 250 pixels. **/
+    left: 186px;                /** The distance of the element from another element's left border. **/
+    top: 50px;                  /** The distance of the element from the top border of another element. **/
+}
+
+/** CSS Formatting for H2 Elements **/
+h2 {
+    position: absolute;                 /** The position of the element will not affect other relative elements. **/
+    height: 33px;                       /** The Height of the element. (33 pixels) **/
+    left: 189px;                        /** The distance of the element from another element's left border. **/
+    top: 38px;                          /** The distance of the element from the top border of another element. **/
+
+    font-family: 'Cookie', cursive;     /** Sets the font to 'Cookie'. Reverts to cursive if the cookie font does not work. **/
+    font-weight: normal;                /** Sets the 'boldness' of the font to normal. **/
+    font-size: 30px;                    /** Sets the size of the font to 30 pixels. **/
+    display: block;                     /** Display the element as a Block. **/
+    text-align: center;                 /** Aligns text to the center of the element. **/
+}
+
+/** CSS Formatting for Form Elements **/
+form {
+    position: absolute;             /** The position of the element will not affect other relative elements. **/
+    left: 550px;                    /** The distance of the element from another element's left border. **/
+    top: 20px;                      /** The distance of the element from the top border of another element. **/
+    padding: 20px;                  /** Set the padding around the form element to 20 pixels **/
+    border: 2px solid black;        /** Creates a 2 pixel solid black border around the element. **/
+
+    background: #9FDCED;            /** Sets the background color of the element to Hexadecimal code #9FDCED, a light teal. **/
+}
+
+/** CSS Formatting for Image Elements (shoppingCart class) **/
+img.shoppingCart {
+    position: absolute;             /** The position of the element will not affect other relative elements. **/
+    width: 70px;                    /** The Width of the element. (70 pixels) **/
+    height: 70px;                   /** The Height of the element. (70 pixels) **/
+    left: 950px;                    /** The distance of the element from another element's left border. **/
+    top: 15px;                      /** The distance of the element from the top border of another element. **/
+}
+
+/** CSS Formatting for Image and Paragraph Elements (numCircle [img] Class and cartNum [p] Class) **/
+img.numCircle, p.cartNum {
+    position: absolute;             /** The position of the element will not affect other relative elements. **/
+    width: 35px;                    /** The Width of the element. (35 pixels) **/
+    height: 35px;                   /** The Height of the element. (35 pixels) **/
+    left: 996px;                    /** The distance of the element from another element's left border. **/
+    top: 6px;                       /** The distance of the element from the top border of another element. **/
+}
+
+/** CSS Formatting for Paragraph Elements (cartNum class) **/
+p.cartNum {
+    left:998px;                     /** The distance of the element from another element's left border. **/
+    margin-top:7px;                 /** Sets the vertical margin to 7 pixels. **/
+    width:32px;                     /** The Width of the element. (1072 pixels) **/
+    
+    font-weight:700;                /** Sets the 'boldness' of the font to 700. **/
+    font-size: 22px;                /** Sets the font size to 22 pixels. **/
+    text-align: center;             /** Aligns text to the center of the element. **/
+    font-family: 'Cookie', cursive; /** Sets the font to 'Cookie'. Reverts to cursive when Cookie cannot be used. **/
+    text-overflow: ellipsis;        /** Sets the method to 'wrap' text when the content surpasses the element's width. **/
+    overflow:hidden;                /** Supplements text-overflow by noting that text that supasses the element's width should be hidden. **/
+}
+
+/** CSS Formatting for the Nav Element (selectMenu Class) **/
+nav.selectMenu {
+    position: relative;         /** The positioning of this element affects other elements on the same line or below it. **/
+    width: 1072px;              /** The Width of the element. (1072 pixels) **/
+    height: 90px;               /** The Height of the element. (90 pixels) **/
+    top:-20px;                  /** The distance of the element from the top border of another element. **/
+    display:block;              /** Display the element as a Block. **/
+    margin-left: auto;          /** Used in tandem with margin-right: auto; to center the Header at the top of the website. (If using a computer, resize the window horizontally.) **/
+    margin-right: auto;         /** Sets distance from the element's right side to the website border. **/
+
+    background: radial-gradient(92.86% 92.86% at 50% 100%, #5FB8D2 0%, #46A6C2 100%), #46A6C2;      /** The background color of the element. Allows from a radial gradient from hexadecimal color code #46A6C2 to #5FB8D2. **/
+    border: 2px solid black;            /** Creates a 2 pixel solid black border around the element. **/
+    border-bottom: 1px solid black;     /** Sets the bottom border to a 1 pixel solid black border. **/
+}
+
+/** CSS Formatting for Box Elements (A.K.A. Button Filters immediately below the header.) **/
+box {
+    position: relative;     /** The positioning of this element affects other elements on the same line or below it. **/
+    margin-left: auto;      /** Used in tandem with margin-right: auto; to center the Header at the top of the website. (If using a computer, resize the window horizontally.) **/
+    margin-right: auto;     /** The distance from the element's right side to the website border. **/
+    padding: 25px 60px;
+    margin: 0px;
+    left: 100px;            /** The distance of the element from another element's left border. **/
+    top: 35px;              /** The distance of the element from the top border of another element. **/
+    
+    border: 1px solid #000000;          /** Creates a 1 pixel solid black border around the element. **/
+    
+    font-family: 'Roboto', serif;   /** Sets the font to 'Roboto'. Reverts to serif when Cookie cannot be used. **/
+    font-weight: 600;               /** Sets the 'boldness' of the font to 600. **/
+    text-align: center;             /** Aligns text to the center of the element. **/
+    text-overflow: ellipsis;        /** Sets the method to 'wrap' text when the content surpasses the element's width. **/
+    overflow: hidden;               /** Supplements text-overflow by noting that text that supasses the element's width should be hidden. **/
+}
+ 
+/* CSS Formatting for selected boxes below the Header. */
+box.selected {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #5FB9D2;     /** The background color of the element. Allows from a linear gradient from RGBA value 255, 255, 255, 0 to hexadecimal code #5FB8D2. **/
+    margin-left: auto;      /** Used in tandem with margin-right: auto; to center the Header at the top of the website. (If using a computer, resize the window horizontally.) **/
+    margin-right: auto;     /** Sets distance from the element's right side to the website border. **/
+}
+
+/* CSS Formatting for unselected boxes below the Header. */
+box.unselected {
+    padding: 20px 40px;     /** Adds a 20 pixel vertical and 40 pixel horizontal distance between the element's borders and the content inside. **/
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #46A6C2;     /** The background color of the element. Allows from a linear gradient from RGBA value 255, 255, 255, 0 to hexadecimal code #46A6C2. **/
+}
+
+/** CSS Formatting for Div Elements **/
+div {
+    position: relative;         /** The positioning of this element affects other elements on the same line or below it. **/
+    display:block;              /** Display the element as a Block. **/
+    width:1072px;               /** The Width of the element. (1072 pixels) **/
+    top:-21px;                  /** The distance of the element from the top border of another element. **/
+    margin-left: auto;          /** Used in tandem with margin-right: auto; to center the Header at the top of the website. (If using a computer, resize the window horizontally.) **/
+    margin-right: auto;         /** Sets distance from the element's right side to the website border. **/
+    
+    background-color: #5FB8D2;  /** Sets the background color of the element to hexadecimal code #5FB8D2. **/
+    border: 2px solid black;    /** Creates a 2 pixel solid black border around the element. **/
+}
+
+/** CSS Formatting for Image Elements (product Class) **/
+img.product {
+    position: relative;             /** The positioning of this element affects other elements on the same line or below it. **/
+    margin: 10px;                   /** Puts a 10 pixel distance between this element and other surrounding elements. **/
+    margin-bottom: 5px;             /** Puts a 5 pixel distance between this element and elements below it. Overrides the margin defined above. **/
+    border: 1px solid #000000;      /** Creates a 1 pixel solid black border around the element. **/
+}
+
+/** CSS Formatting for Paragraph Elements (description Class) **/
+p.description{
+    position:absolute;                  /** The position of the element will not affect other relative elements. **/
+    width: 250px;                       /** The Width of the element. (250 pixels) **/
+    height: 180px;                      /** The Height of the element. (180 pixels) **/
+    padding: 10px;                      /** Puts a 10 pixel distance between the content inside the element and the border **/
+    left: 230px;                        /** The distance of the element from another element's left border. **/
+    margin: -210px 0px 0px 0px;         /** Adds a -210 pixel top margin, 0 pixel bottom margin, 0 pixel right margin, and 0 pixel left margin. **/
+    
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #9FDCED;     /** The background color of the element. Allows from a linear gradient from RGBA value 255, 255, 255, 0 to hexadecimal code #9FDCED. **/
+    border: 1px solid #000000;      /** Creates a 2 pixel solid black border around the element. **/   
+    font-family: 'Roboto', serif;   /** Sets the font to 'Roboto'. Reverts to serif when Cookie cannot be used. **/
+    font-weight: 500;               /** Sets the 'boldness' of the font to 500 pixels. **/
+}
+
+/** CSS Formatting for Image Elements (productRight Class) **/
+img.productRight {
+    position: absolute;                 /** The position of the element will not affect other relative elements. **/
+    margin-left: 350px;                 /** Sets the distance of the element from another element's left border to 350 pixels. **/
+    margin-top: 10px;                   /** Sets the vertical margin to 10 pixels. **/
+    margin: 10px 0px 0px 350px;         /** Adds a 10 pixel top margin, 0 pixel bottom margin, 0 pixel right margin, and 350 pixel left margin. **/
+    border: 1px solid #000000;          /** Creates a 2 pixel solid black border around the element. **/
+}
+
+/** CSS Formatting for Paragraph Elements (descriptionRight Class) **/
+p.descriptionRight {
+    position:absolute;                  /** The position of the element will not affect other relative elements. **/
+    width: 250px;                       /** The Width of the element. (250 pixels) **/
+    height: 180px;                      /** The Height of the element. (180 pixels) **/
+    padding: 10px;                      /** Puts a 10 pixel distance between the content inside the element and the border. **/
+    margin: -210px 0px 0px 0px;         /** Adds a -210 pixel top margin, 0 pixel bottom margin, 0 pixel right margin, and 0 pixel left margin. **/
+    left: 792px;                        /** The distance of the element from another element's left border. **/
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #9FDCED;     /** The background color of the element. Allows from a linear gradient from RGBA value 255, 255, 255, 0 to hexadecimal code #9FDCED. **/
+    border: 1px solid #000000;          /** Creates a 2 pixel solid black border around the element. **/
+    font-family: 'Roboto', serif;       /** Sets the font to 'Roboto'. Reverts to serif when Cookie cannot be used. **/
+    font-weight: 500;                   /** Sets the 'boldness' of the font to 500. **/
+}
+
+/** CSS Formatting for Image Elements (addItem Class) **/
+img.addItem {
+    position:absolute;      /** The position of the element will not affect other relative elements. **/
+    left:180px;             /** The distance of the element from another element's left border. **/
+    margin-top:180px;       /** Sets the vertical margin to 180 pixels. **/
+}
+
+/** CSS Formatting for Image Elements (addItemRight Class) **/
+img.addItemRight {
+    position:absolute;      /** The position of the element will not affect other relative elements. **/
+    left:743px;             /** The distance of the element from another element's left border. **/
+    margin-top:180px;       /** Sets the vertical margin to 180 pixels. **/
+}
+
+/** CSS Formatting for the Footer. **/
+footer {
+    position: relative;     /** The positioning of this element affects other elements on the same line or below it. **/
+    margin-top: -23px;      /** Sets the vertical margin to 10 pixels. **/
+    padding: 10px 0px;      /** Sets the vertical padding of the element to 10 pixels vertically and 0 pixels horizontally. **/
+    width: 1072px;          /** The Width of the element. (1072 pixels) **/
+    margin-left: auto;      /** Used in tandem with margin-right: auto; to center the Header at the top of the website. (If using a computer, resize the window horizontally.) **/
+    margin-right: auto;     /** Sets distance from the element's right side to the website border. **/
+
+    background: linear-gradient(180deg, #5FB8D2 20%, rgba(255, 255, 255, 0) 100%), #7CCAE0;     /** The background color of the element. Allows from a linear gradient from hexadecimal code #5FB8D2 to #7CCAE0. **/
+    border: 2px solid #000000;          /** Creates a 2 pixel solid black border around the element. **/
+    font-family: 'Roboto', serif;       /** Sets the font to 'Roboto'. Reverts to serif when Cookie cannot be used. **/
+}
+
+/** CSS Formatting for the Facebook picture logo at the bottom-right of the website. **/
+img.facebook {
+    position: absolute;     /** The position of the element will not affect other relative elements. **/
+    float:right;            /** Positions the element on the right side of the page. **/
+    display:block;          /** Display the element as a Block. **/
+    left:900px;             /** The distance of the element from another element's left border. **/
+    margin-top: -42px;      /** Sets the vertical margin to -42 pixels. **/
+    margin-left: auto;      /** Used in tandem with margin-right: auto; to center the Header at the top of the website. (If using a computer, resize the window horizontally.) **/
+    margin-right: auto;     /** Sets distance from the element's right side to the website border. **/
+}
+
+/** CSS Formatting for Paragraph Elements (facebook Class) **/
+p.facebook {
+    position: absolute;     /** The position of the element will not affect other relative elements. **/
+    top:73px;               /** The distance of the element from the top border of another element. **/
+    left:710px;             /** The distance of the element from another element's left border. **/
+    margin-top: -42px;      /** Sets the vertical margin to -42 pixels. **/
+    margin-left: auto;      /** Used in tandem with margin-right: auto; to center the Header at the top of the website. (If using a computer, resize the window horizontally.) **/
+    margin-right: auto;     /** Sets distance from the element's right side to the website border. **/
+    
+    text-align: center;     /** Aligns text to the center of the element. **/
+}
+
